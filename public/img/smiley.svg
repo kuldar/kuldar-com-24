@@ -1,0 +1,41 @@
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d_5_111)">
+    <circle cx="54.8929" cy="54.8929" r="40.0977" transform="rotate(-30.4694 54.8929 54.8929)"
+      fill="#EEEAE3" />
+    <circle cx="54.8929" cy="54.8929" r="43.0977" transform="rotate(-30.4694 54.8929 54.8929)"
+      stroke="white" stroke-width="6" />
+  </g>
+  <ellipse cx="33.7772" cy="66.6613" rx="6.5" ry="6" transform="rotate(-35.565 33.7772 66.6613)"
+    fill="#A8A29E" />
+  <ellipse cx="75.6171" cy="42.4299" rx="6.5" ry="6" transform="rotate(-29.6489 75.6171 42.4299)"
+    fill="#A8A29E" />
+  <circle cx="54.8929" cy="54.8929" r="38.0977" transform="rotate(-30.4694 54.8929 54.8929)"
+    stroke="#57534E" stroke-width="4" />
+  <path
+    d="M75.8227 43.0224C81.6286 52.8909 79.5935 65.205 71.5919 72.7333C70.3077 73.9415 67.3935 71.7638 65.8098 72.6956C64.5747 73.4222 64.9438 79.8302 63.6463 80.3149C62.268 80.8297 60.4536 75.2436 59.0378 75.494C57.4888 75.768 56.1701 79.3111 54.6188 79.2795C46.5465 79.1149 38.745 74.8913 34.3504 67.4216"
+    stroke="#57534E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="33.1401" y="43.4424" width="11.2753" height="25.0231" rx="5.63766"
+    transform="rotate(-26.347 33.1401 43.4424)" fill="white" stroke="#57534E" stroke-width="4" />
+  <rect x="37.856" y="41.3213" width="6.52133" height="10.4909" rx="3.26066"
+    transform="rotate(-26.347 37.856 41.3213)" fill="#57534E" />
+  <rect x="48.2804" y="36.5033" width="11.2753" height="25.0231" rx="5.63766"
+    transform="rotate(-26.347 48.2804 36.5033)" fill="white" stroke="#57534E" stroke-width="4" />
+  <rect x="52.7971" y="34.0117" width="6.22196" height="11.2936" rx="3.11098"
+    transform="rotate(-26.347 52.7971 34.0117)" fill="#57534E" />
+  <defs>
+    <filter id="filter0_d_5_111" x="6.78784" y="8.78784" width="96.2101" height="96.2102"
+      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix"
+        values="0 0 0 0 0.160784 0 0 0 0 0.145098 0 0 0 0 0.141176 0 0 0 0.15 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_111" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_111" result="shape" />
+    </filter>
+  </defs>
+</svg>
+  

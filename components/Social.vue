@@ -8,7 +8,7 @@ import {
 </script>
 
 <template>
-  <div class="gap-10 px-8 py-2">
+  <div class="gap-10 px-7 py-2">
     <ul class="flex items-center justify-end gap-8 text-lg">
       <li>
         <a
@@ -34,15 +34,6 @@ import {
           class="flex items-center gap-2 text-stone-400 transition-colors hover:text-stone-500"
         >
           <PhGithubLogo :size="20" weight="duotone" />
-          <span>@kuldar</span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center gap-2 text-stone-400 transition-colors hover:text-stone-500"
-        >
-          <PhYoutubeLogo :size="20" weight="duotone" />
           <span>@kuldar</span>
         </a>
       </li>

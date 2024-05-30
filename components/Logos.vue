@@ -8,8 +8,12 @@ import LiveStoreLogo from "~/assets/logos/livestore.svg";
 
 <template>
   <div
-    class="rounded-xl border-t border-white bg-merino-50 p-2 shadow-sm shadow-stone-300"
+    class="relative rounded-xl border-t border-white bg-merino-50 p-2 shadow-sm shadow-stone-300"
   >
+    <div class="pointer-events-none absolute -top-9 right-32 z-10">
+      <img src="/img/sunglasses.svg" class="h-[66px] w-[117px]" />
+    </div>
+
     <div
       class="flex items-center justify-between rounded-lg border border-stone-200 p-8"
     >

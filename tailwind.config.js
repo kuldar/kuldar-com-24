@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        full: "100%",
+      },
       colors: {
         merino: {
           50: "#f8f6f4",
@@ -32,5 +35,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/container-queries")],
 };

@@ -1,66 +1,57 @@
 <script setup>
-import { PhArrowRight, PhLink } from "@phosphor-icons/vue";
+import PeaceHand from "~/assets/peace.svg";
+
+const projects = shallowRef([
+  {
+    id: 1,
+    name: "Night Mode Pro",
+    description:
+      "Ad ut labore anim pariatur tempor incididunt aliqua sit adipisicing eiusmod ad adipisicing aliqua in nulla.",
+    illustration: PeaceHand,
+    linkText: "View on Github",
+    linkUrl: "#",
+  },
+  {
+    id: 2,
+    name: "Some Project Name",
+    description:
+      "Ad ut labore anim pariatur tempor incididunt aliqua sit adipisicing eiusmod ad adipisicing aliqua in nulla.",
+    illustration: PeaceHand,
+    linkText: "View on Github",
+    linkUrl: "#",
+  },
+  {
+    id: 3,
+    name: "Some Project Name",
+    description:
+      "Ad ut labore anim pariatur tempor incididunt aliqua sit adipisicing eiusmod ad adipisicing aliqua in nulla.",
+    illustration: PeaceHand,
+    linkText: "View on Github",
+    linkUrl: "#",
+  },
+]);
+
+const setActiveProject = (project) => {
+  activeProject.value = project;
+};
+
+const activeProject = shallowRef(projects.value[0]);
 </script>
 
 <template>
-  <div class="flex flex-1 gap-1">
-    <div class="flex-1 rounded-xl bg-white p-2 shadow-sm shadow-stone-300">
-      <div
-        class="flex h-full flex-col justify-end rounded-lg bg-gradient-to-bl from-merino-50 via-white to-white px-8 py-6"
-      >
-        <div class="text-3xl font-extrabold text-stone-600">
-          Some Project Name
-        </div>
-
-        <div class="mt-2 text-lg text-stone-400">
-          Ad ut labore anim pariatur tempor incididunt aliqua sit adipisicing
-          eiusmod ad adipisicing aliqua in nulla. Cillum irure laborum.
-        </div>
-
-        <a
-          href="#"
-          class="mt-4 flex items-center gap-2 text-lg text-stone-500 underline"
-        >
-          <PhLink :size="20" weight="duotone" />
-          <span>https://github.com/kuldar/something</span>
-        </a>
-      </div>
+  <div class="relative flex h-full">
+    <div class="pointer-events-none absolute -top-7 left-24 z-10">
+      <img src="/img/smiley.svg" class="h-[110px] w-[110px]" />
     </div>
 
-    <div
-      class="group max-w-24 flex-1 rounded-xl bg-white p-2 text-stone-400 shadow-sm shadow-stone-300 hover:cursor-pointer hover:text-stone-500"
-    >
-      <div
-        class="flex h-full flex-col justify-end rounded-lg bg-gradient-to-bl from-merino-50 via-white to-white px-8 py-6 transition-all group-hover:py-10"
-      >
-        <div class="-rotate-90 whitespace-nowrap text-xl font-semibold">
-          Some Project Name
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="group max-w-24 flex-1 rounded-xl bg-white p-2 text-stone-400 shadow-sm shadow-stone-300 hover:cursor-pointer hover:text-stone-500"
-    >
-      <div
-        class="flex h-full flex-col justify-end rounded-lg bg-gradient-to-bl from-merino-50 via-white to-white px-8 py-6 transition-all group-hover:py-10"
-      >
-        <div class="-rotate-90 whitespace-nowrap text-xl font-semibold">
-          This Other Project
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="group max-w-24 flex-1 rounded-xl bg-white p-2 text-stone-400 shadow-sm shadow-stone-300 hover:cursor-pointer hover:text-stone-500"
-    >
-      <div
-        class="flex h-full flex-col justify-end rounded-lg bg-gradient-to-bl from-merino-50 via-white to-white px-8 py-6 transition-all group-hover:py-10"
-      >
-        <div class="-rotate-90 whitespace-nowrap text-xl font-semibold">
-          And a Third One
-        </div>
-      </div>
+    <div class="flex h-full max-h-full flex-1 gap-1 overflow-auto">
+      <Project
+        v-for="project in projects"
+        :project="project"
+        :isActive="project === activeProject"
+        @set-project="setActiveProject"
+        :key="project.id"
+      />
     </div>
   </div>
 </template>
